@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
 
 TextView output;
 EditText Enternum;
-Button meter;
+Button milimeter;
 Button centimeter;
 Button kilometer;
 Button miles;
@@ -26,32 +26,32 @@ Button miles;
         setContentView(R.layout.activity_main);
         output = findViewById(R.id.View);
         Enternum = findViewById(R.id.editTextNumberDecimal);
-        meter = findViewById(R.id.button4);
+        milimeter = findViewById(R.id.button4);
         centimeter = findViewById(R.id.button3);
         kilometer = findViewById(R.id.button2);
         miles = findViewById(R.id.button);
 
-        meter.setOnClickListener(view -> {
+        milimeter.setOnClickListener(view -> {
             String num = Enternum.getText().toString();
-            int number = Integer.parseInt(num);
-            float meter =(number*1000);
-            output.setText("Value in meters:" + meter);
+            float number = Float.parseFloat(num);
+            float milimeter =(number*1000);
+            output.setText("Value in milimeters:" + milimeter);
         });
         centimeter.setOnClickListener(view -> {
             String num = Enternum.getText().toString();
-            int number = Integer.parseInt(num);
+            float number = Float.parseFloat(num);
             float centimeter =(number*100);
             output.setText("Value in centimeters:" + centimeter);
         });
         kilometer.setOnClickListener(view -> {
             String num = Enternum.getText().toString();
-            int number = Integer.parseInt(num);
+            float number = Float.parseFloat(num);
             double kilometer =(number / 1000);
             output.setText("Value in kilometers:" + kilometer);
         });
         miles.setOnClickListener(view -> {
             String num = Enternum.getText().toString();
-            int number = Integer.parseInt(num);
+            float number = Float.parseFloat(num);
             double miles =(number/1.609);
             output.setText("Value in miles:" + miles);
         });
