@@ -13,17 +13,17 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="237dp"
+        android:layout_height="64dp"
         android:text="@string/unit_converter"
+        android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.457"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.047" />
+        app:layout_constraintVertical_bias="0.092" />
 
     <EditText
         android:id="@+id/editTextNumberDecimal"
@@ -34,15 +34,16 @@
         android:hint="@string/enter_number"
         android:inputType="numberDecimal"
         android:textAlignment="center"
+        android:textColor="#F4EFEF"
         android:textColorHint="#AEABAB"
         android:textSize="20sp"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.066"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.241"
         app:layout_constraintWidth="wrap_content"
         app:layout_constraintWidth_default="wrap"
         app:layout_constraintWidth_max="wrap"
@@ -54,9 +55,13 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/reset"
-        tools:layout_editor_absoluteX="256dp"
-        tools:layout_editor_absoluteY="498dp"
+        android:text="@string/mile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.786"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.873"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -64,8 +69,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/kilometer"
-        tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="498dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.875"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -73,8 +82,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/centimeter"
-        tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="402dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.188"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.724"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -82,12 +95,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/meter"
-        tools:layout_editor_absoluteX="256dp"
-        tools:layout_editor_absoluteY="402dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.764"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.722"
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/View"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:width="200dp"
@@ -97,8 +114,12 @@
         android:textColor="#FAF7F7"
         android:textColorHint="#F4EFEF"
         android:textSize="20sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="105dp"
-        tools:layout_editor_absoluteY="201dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.377"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
