@@ -5,7 +5,7 @@
     android:id="@+id/CONVERTER"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0C0C0C"
+    android:background="@color/teal_200"
     android:textAlignment="center"
     android:visibility="visible"
     tools:context=".MainActivity"
@@ -17,7 +17,7 @@
         android:layout_height="64dp"
         android:text="@string/unit_converter"
         android:textAlignment="center"
-        android:textColor="#FFFFFF"
+        android:textColor="#090909"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -31,11 +31,11 @@
         android:layout_height="48dp"
         android:autofillHints=""
         android:ems="10"
-        android:hint="@string/enter_number"
+        android:hint="@string/enter_meters"
         android:inputType="numberDecimal"
         android:textAlignment="center"
         android:textColor="#F4EFEF"
-        android:textColorHint="#AEABAB"
+        android:textColorHint="#0B0A0A"
         android:textSize="20sp"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -49,20 +49,25 @@
         app:layout_constraintWidth_max="wrap"
         app:layout_constraintWidth_min="wrap"
         app:layout_constraintWidth_percent="200"
+        tools:ignore="LabelFor"
         tools:visibility="visible" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/mile"
+        android:contentDescription="@string/mile"
+        android:text="@string/MILES"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#F6F4F4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.786"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.873"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints,TextContrastCheck" />
 
     <Button
         android:id="@+id/button2"
@@ -75,7 +80,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.875"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints,TextContrastCheck" />
 
     <Button
         android:id="@+id/button3"
@@ -88,20 +93,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.724"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints,TextContrastCheck" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/meter"
+        android:text="@string/milimeter"
+        android:textColor="#F6FAF9"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.764"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.722"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints,TextContrastCheck" />
 
     <TextView
         android:id="@+id/View"
@@ -111,8 +117,8 @@
         android:height="50dp"
         android:hint="@string/output"
         android:textAlignment="center"
-        android:textColor="#FAF7F7"
-        android:textColorHint="#F4EFEF"
+        android:textColor="#090909"
+        android:textColorHint="#0C0C0C"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
