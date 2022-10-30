@@ -18,6 +18,7 @@ Button milimeter;
 Button centimeter;
 Button kilometer;
 Button miles;
+Button kelvin;
     @RequiresApi(api = Build.VERSION_CODES.S)
     @SuppressLint({"WrongViewCast", "MissingInflatedId", "SetTextI18n"})
     @Override
@@ -30,30 +31,37 @@ Button miles;
         centimeter = findViewById(R.id.button3);
         kilometer = findViewById(R.id.button2);
         miles = findViewById(R.id.button);
+        kelvin = findViewById(R.id.button5);
 
         milimeter.setOnClickListener(view -> {
             String num = Enternum.getText().toString();
             float number = Float.parseFloat(num);
-            float milimeter =(number*1000);
-            output.setText("Value in milimeters:" + milimeter);
+            double milimeter = (number*1000);
+            output.setText("Value in milimeter:\n" + milimeter);
         });
         centimeter.setOnClickListener(view -> {
             String num = Enternum.getText().toString();
             float number = Float.parseFloat(num);
-            float centimeter =(number*100);
-            output.setText("Value in centimeters:" + centimeter);
+            double centimeter = (number*100);
+            output.setText("Value in centimeter:\n" + centimeter);
         });
         kilometer.setOnClickListener(view -> {
             String num = Enternum.getText().toString();
             float number = Float.parseFloat(num);
-            double kilometer =(number / 1000);
-            output.setText("Value in kilometers:" + kilometer);
+            double kilometer = (number/1000);
+            output.setText("Value in kilometer:\n" + kilometer);
         });
         miles.setOnClickListener(view -> {
             String num = Enternum.getText().toString();
             float number = Float.parseFloat(num);
-            double miles =(number/1.609);
-            output.setText("Value in miles:" + miles);
+            double miles =(number*0.000621);
+            output.setText("Value in miles:\n" + miles);
+        });
+        kelvin.setOnClickListener(view -> {
+            String num = Enternum.getText().toString();
+            float number = Float.parseFloat(num);
+            double kelvin = (number+273.15);
+            output.setText("Value in kelvin:\n" + kelvin);
         });
 
     }
