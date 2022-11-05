@@ -5,6 +5,7 @@
     android:id="@+id/CONVERTER"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:animateLayoutChanges="false"
     android:background="@color/teal_200"
     android:textAlignment="center"
     android:visibility="visible"
@@ -14,10 +15,11 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="237dp"
-        android:layout_height="64dp"
+        android:layout_height="80dp"
+        android:fontFamily="times new roman"
         android:text="@string/unit_converter"
         android:textAlignment="center"
-        android:textColor="#090909"
+        android:textColor="#070707"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -32,19 +34,19 @@
         android:width="250dp"
         android:autofillHints=""
         android:ems="10"
+        android:fontFamily="times new roman"
         android:hint="@string/input"
         android:inputType="numberDecimal"
         android:textAlignment="center"
-        android:textColor="#070707"
-        android:textColorHint="#0B0A0A"
+        android:textColorHint="#070707"
         android:textSize="20sp"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.465"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.18"
+        app:layout_constraintVertical_bias="0.34"
         app:layout_constraintWidth="wrap_content"
         app:layout_constraintWidth_default="wrap"
         app:layout_constraintWidth_max="wrap"
@@ -76,10 +78,10 @@
         android:layout_height="wrap_content"
         android:width="250dp"
         android:height="50dp"
+        android:fontFamily="times new roman"
         android:hint="@string/output"
         android:textAlignment="center"
-        android:textColor="#070707"
-        android:textColorHint="#0C0C0C"
+        android:textColorHint="#070707"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -92,15 +94,16 @@
     <TextView
         android:layout_width="50dp"
         android:layout_height="30dp"
+        android:fontFamily="times new roman"
         android:text="@string/to"
         android:textAlignment="center"
         android:textColor="#070707"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.761"
+        app:layout_constraintHorizontal_bias="0.759"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.396"
+        app:layout_constraintVertical_bias="0.479"
         tools:ignore="MissingConstraints" />
 
     <Spinner
@@ -112,12 +115,14 @@
         app:layout_constraintHorizontal_bias="0.763"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.457"
+        app:layout_constraintVertical_bias="0.534"
         tools:ignore="DuplicateIds,MissingConstraints" />
 
     <TextView
+        android:id="@+id/textView3"
         android:layout_width="50dp"
         android:layout_height="30dp"
+        android:fontFamily="times new roman"
         android:text="@string/from"
         android:textAlignment="center"
         android:textColor="#070707"
@@ -126,7 +131,7 @@
         app:layout_constraintHorizontal_bias="0.29"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.396"
+        app:layout_constraintVertical_bias="0.48"
         tools:ignore="MissingConstraints" />
 
     <Spinner
@@ -138,8 +143,36 @@
         app:layout_constraintHorizontal_bias="0.289"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.458"
+        app:layout_constraintVertical_bias="0.534"
         tools:ignore="MissingConstraints" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.575"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.184" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:fontFamily="times new roman"
+        android:text="@string/choose"
+        android:textAlignment="viewStart"
+        android:textColor="#070707"
+        android:textIsSelectable="true"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
